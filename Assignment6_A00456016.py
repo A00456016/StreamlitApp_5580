@@ -3,12 +3,12 @@ import pandas as pd
 import requests
 
 
-st.title("Bitcoin Prices")
+st.title("Bitcoin Prices - By Harsh Panchal")
 
-days = st.slider('Number of days?', 1, 365, 90)
+days = st.slider('Please select number of days', 1, 365, 90)
 
 currency = st.radio(
-     "Please select your preffered currency",
+     "Please select your preferred currency",
      ('cad', 'usd', 'inr'))
      
 payload = {'vs_currency': currency, 'days': days, 'interval': 'daily'}
